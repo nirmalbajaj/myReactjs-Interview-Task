@@ -1,12 +1,24 @@
-# React + Vite
+# Image Upload App
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+A frontend-only web application built with React that allows users to log in, upload images, and view them on different pages. The app includes features like liking images, sorting by upload time or likes, and persisting data using `localStorage`.
 
-Currently, two official plugins are available:
+## Features
+- **User Authentication**: Log in with predefined credentials (`admin` / `admin123`).
+- **Image Upload**: Upload images and view them on the Home page.
+- **Multiple Views**:
+  - **Home**: Displays all uploaded images.
+  - **Recently Added**: Shows images sorted by upload time (newest first).
+  - **Top Rated**: Shows images sorted by the number of likes (most liked first).
+- **Like Functionality**: Users can like images to show appreciation.
+- **Data Persistence**: Uses `localStorage` to save user data and images between page refreshes.
+- **Form Validation**: Login form validation using React Hook Form and Yup.
+- **Responsive Design**: Styled with Tailwind CSS for a responsive and modern UI.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
-
-## Expanding the ESLint configuration
-
-If you are developing a production application, we recommend using TypeScript and enable type-aware lint rules. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+## Tech Stack
+- **React**: For building the user interface.
+- **Vite**: For project setup and fast development.
+- **React Router**: For navigation between pages (Home, Recently Added, Top Rated).
+- **Redux Toolkit**: For state management (user data, images, likes).
+- **React Hook Form & Yup**: For form handling and validation.
+- **Tailwind CSS**: For styling the app.
+- **localStorage**: For persisting data in the browser.
